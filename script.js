@@ -27,7 +27,6 @@ $("p").on("click", function () {
   $(div).css("border-top-right-radius", "0px");
   $(div).css("border-bottom-left-radius", "0px");
   $(div).css("z-index", "2");
-
 })
 
 });
