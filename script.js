@@ -3,7 +3,7 @@ var width;
 var height;
 var div;
 $(".container div").on("click", function() {
-  if($(this).attr("value") !== "1"){
+  while($(this).attr("value") !== "1"){
   width = $(this).width();
   height = $(this).height();
   div = this;
@@ -16,16 +16,17 @@ $(".container div").on("click", function() {
   $(this).css("z-index", "10");
   $(this).attr("value", "1");
   $("p").css("display","inline-block");
+  return;
   }
 })
 $("p").on("click", function () {
   $(div).css("width", width);
   $(div).css("height", height);
   $("p").css("display", "none");
-  $(div).attr("value", "0");
   $(div).css("border-top-right-radius", "0px");
   $(div).css("border-bottom-left-radius", "0px");
   $(div).css("z-index", "2");
+
 })
 
 });
