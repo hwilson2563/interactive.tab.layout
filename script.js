@@ -4,6 +4,7 @@ var height;
 var div;
 $(".container div").on("click", function() {
   while($(this).attr("value") !== "1"){
+  $(".container div").attr("value", "0");
   width = $(this).width();
   height = $(this).height();
   div = this;
