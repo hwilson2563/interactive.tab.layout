@@ -18,7 +18,7 @@ $(".container div").on("click", function() {
   $("p").css("display","inline-block");
   }
 })
-$("p").on("mouseenter", function () {
+$("p").on("click", function () {
   $(div).css("width", width);
   $(div).css("height", height);
   $("p").css("display", "none");
