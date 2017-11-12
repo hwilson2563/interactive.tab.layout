@@ -3,14 +3,11 @@ var width;
 var height;
 var div;
 $(".container div").on("click", function() {
-  while($(this).attr("value") !== "1"){
+  if($(this).attr("value") !== "1"){
   $(".container div").attr("value", "0");
   width = $(this).width();
   height = $(this).height();
   div = this;
-  console.log(height);
-  console.log(width);
-  console.log(div);
   $(this).css("width", "100%");
   $(this).css("height","100%");
   $(this).css("border-radius", "10px");
@@ -28,6 +25,7 @@ $("p").on("click", function () {
   $(div).css("border-bottom-left-radius", "0px");
   $(div).css("z-index", "2");
 })
+
 
 });
 
